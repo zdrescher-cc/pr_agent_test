@@ -1,8 +1,0 @@
-[config]
-model = "ollama/qwen2.5-coder:14b"
-fallback_models=["ollama/phi4:latest"]
-custom_model_max_tokens=128000 # set the maximal input tokens for the model
-duplicate_examples=true # will duplicate the examples in the prompt, to help the model to generate structured output
-
-[ollama]
-api_base = "http://localai.int-svc.cc:11434" # or whatever port you're running Ollama on

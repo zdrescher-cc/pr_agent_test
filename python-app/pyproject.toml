@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "python-app"
+version = "0.1.0"
+description = ""
+authors = ["Zack Drescher <zdrescher@clearcompany.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.8"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+python-app = "python_app.cli:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

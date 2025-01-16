@@ -1,2 +1,8 @@
 [config]
-model="gpt-4o-mini"
+model = "ollama/qwen2.5-coder:14b"
+fallback_models=["ollama/phi4:latest"]
+custom_model_max_tokens=128000
+duplicate_examples=true
+
+[ollama]
+api_base = "http://localai.int-svc.cc:11434" # the base url for your local Llama 2, Code Llama, and other models inference endpoint. Acquire through https://ollama.ai/
